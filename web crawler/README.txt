@@ -7,25 +7,12 @@ process.
 
 You should install the SQLite browser to view and modify 
 the databases from:
-
 http://sqlitebrowser.org/
 
 This program crawls a web site and pulls a series of pages into the
 database, recording the links between pages.
 
-Note: Windows has difficulty in displaying UTF-8 characters
-in the console so for each console window you open, you may need
-to type the following command before running this code:
 
-    chcp 65001
-
-http://stackoverflow.com/questions/388490/unicode-characters-in-windows-command-line-how
-
-Mac: rm spider.sqlite
-Mac: python3 spider.py
-
-Win: del spider.sqlite
-Win: spider.py
 
 Enter web url or enter: http://www.dr-chuck.com/
 ['http://www.dr-chuck.com']
@@ -76,9 +63,6 @@ Once you have a few pages in the database, you can run Page Rank on the
 pages using the sprank.py program.  You simply tell it how many Page
 Rank iterations to run.
 
-Mac: python3 sprank.py 
-Win: sprank.py 
-
 How many iterations:2
 1 0.546848992536
 2 0.226714939664
@@ -86,7 +70,7 @@ How many iterations:2
 
 You can dump the database again to see that page rank has been updated:
 
-Mac: python3 spdump.py 
+
 Win: spdump.py 
 
 (5, 1.0, 0.985, 3, u'http://www.dr-chuck.com/csev-blog')
@@ -140,7 +124,6 @@ If you want to visualize the current top pages in terms of page rank,
 run spjson.py to write the pages out in JSON format to be viewed in a
 web browser.
 
-Mac: python3 spjson.py 
 Win: spjson.py 
 
 Creating JSON output on spider.js...
